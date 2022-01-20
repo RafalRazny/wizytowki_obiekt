@@ -46,5 +46,5 @@ def create_contacts (amount, a):
             print(z)
 
 
-    
+
 print(create_contacts(4, BusinessContact))
