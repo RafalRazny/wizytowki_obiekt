@@ -35,16 +35,16 @@ class BusinessContact(BaseContact):
     def label_length(self):
         return int(len(self.first_name)) + int(len(self.last_name))
 
-def create_contacts (amount, a):
-    if a == BaseContact:
+def create_contacts(amount, contact_type):
+    if contact_type == BaseContact:
         for i in range(amount):
             i = BaseContact(first_name=fake.first_name(), last_name=fake.last_name(), phone_number=fake.phone_number(), e_mail=fake.email())
-            print(i)
-    elif a == BusinessContact:
+            print (i)
+    elif contact_type == BusinessContact:
         for z in range(amount):
             z = BusinessContact(first_name=fake.first_name(), last_name=fake.last_name(), company_number=fake.phone_number(), e_mail=fake.email(), position=fake.job(), company_name=fake.company(), phone_number=fake.phone_number())
-            print(z)
+            return (z)
 
 
 
-print(create_contacts(4, BusinessContact))
+create_contacts(6, BaseContact)
