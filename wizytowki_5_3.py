@@ -43,7 +43,7 @@ def create_contacts(amount, contact_type):
     elif contact_type == BusinessContact:
         for z in range(amount):
             z = BusinessContact(first_name=fake.first_name(), last_name=fake.last_name(), company_number=fake.phone_number(), e_mail=fake.email(), position=fake.job(), company_name=fake.company(), phone_number=fake.phone_number())
-            return (z)
+            print(z)
 
 
 
